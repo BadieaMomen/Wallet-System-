@@ -1,0 +1,329 @@
+{
+  "info": {
+    "_postman_id": "a90e8746-819f-4685-9581-ae0bff8c1f17",
+    "name": "Wallet system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48463790",
+    "_collection_link": "https://bdeamomen2-4771993.postman.co/workspace/7b4a11d4-857b-49b3-88dd-6a1a4f92e6f8/collection/48463790-a90e8746-819f-4685-9581-ae0bff8c1f17?action=share&source=collection_link&creator=48463790"
+  },
+  "item": [
+    {
+      "name": "The Account",
+      "item": [
+        {
+          "name": "Create user",
+          "id": "e6cc4deb-fde6-4fa9-93f5-d2d502725f7c",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"badieamomen\",\r\n    \"phone\": 734522133,\r\n    \"password\": \"12345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{CreateUser}}",
+              "host": [
+                "{{CreateUser}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "id": "42ff4854-5d10-4826-860a-61716761698c",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Delete account",
+          "id": "2b24a74a-8b72-4c92-b8b2-5f1d387d78ff",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "id": "ab74a2e5-a45c-4f08-9456-d86aee122ea3",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
+      "id": "2f795c4d-eb81-42c1-831b-e6db4e962103"
+    },
+    {
+      "name": "Wallet Depposie",
+      "item": [
+        {
+          "name": "rong deposite",
+          "id": "f90a53a9-a789-48a6-ada8-4f4a6b10a064",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzODM5MjMxLCJpYXQiOjE3NjM4Mzg5MzEsImp0aSI6IjYxMzg2MTEyNjllMTRiNDRhZmRjNWM1MDcxY2Q1Y2E4IiwidXNlcl9pZCI6IjEifQ.VNeMi3C3E8028UqOsy7ACxbObZSZsL7wfyXZnqh4nHQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"phone\":777,\r\n    \"amount\":1000000000000,\r\n    \"currency\":\"YEM\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Deposite}}",
+              "host": [
+                "{{Deposite}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "depostite",
+          "id": "1499efc0-173e-4545-b5db-0bca7b2f59a9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNzM2ODA2LCJpYXQiOjE3NjM3MzY1MDYsImp0aSI6IjEyYTc4NmIzZDZiZDQ0ODBhNzBhMWFiNjk3OGU5YWE3IiwidXNlcl9pZCI6IjE0In0.PPVUP6cmP0i5WnN16kkifqhoYTiQ6r90RNT-k6hTzl8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"phone\":7321,\r\n    \"curracy\":\"YEM\",\r\n    \"amount\":2500\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "127.0.0.1:8000/wallet/Deposit/",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "wallet",
+                "Deposit",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "8487d055-34a9-4f31-b71f-64aa10aba1fb"
+    },
+    {
+      "name": "Test withdraw",
+      "item": [
+        {
+          "name": "withdraw",
+          "id": "0e32f9cc-9978-449e-859b-227d65eff0a6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzODM4NTI0LCJpYXQiOjE3NjM4MzgyMjQsImp0aSI6IjQ2YTllZWRiM2ZhNjQ5NDk5OWM0Y2E1NjM0ZWI5NmQ2IiwidXNlcl9pZCI6IjEifQ.w4D73SrL9w30KLQ8kwvUYs8egkctLNZPI9N6auGXo00",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"phone\":777,\r\n    \"amount\":500\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{withdraw}}",
+              "host": [
+                "{{withdraw}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e379256e-a584-4e1a-b2ba-54fa8fad2f90"
+    },
+    {
+      "name": "list the transaction",
+      "item": [
+        {
+          "name": "queries apuut tracnsaction",
+          "id": "107030b3-74da-4da6-9298-2b00d78c126d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzODM4NTI0LCJpYXQiOjE3NjM4MzgyMjQsImp0aSI6IjQ2YTllZWRiM2ZhNjQ5NDk5OWM0Y2E1NjM0ZWI5NmQ2IiwidXNlcl9pZCI6IjEifQ.w4D73SrL9w30KLQ8kwvUYs8egkctLNZPI9N6auGXo00",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{List Transaction}}",
+              "host": [
+                "{{List Transaction}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "76ec162c-5f1b-468c-ba52-94b05b4d65a0"
+    },
+    {
+      "name": "wallet details",
+      "item": [
+        {
+          "name": "wallet details",
+          "id": "a3e78fdc-e9a7-4b35-9144-5c27d2e072b6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzODQwMDI0LCJpYXQiOjE3NjM4Mzk3MjQsImp0aSI6ImQ0NWU2YjlkY2FiYzQ4MDk5ZjI1YWQ5ZjhkYWE5MTExIiwidXNlcl9pZCI6IjEifQ.BWEftbPQ66tz-vIc3Vin60PIUOTM5ohyadP1qtZqVZM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "csrf",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{WalletDetails}}?phone=777",
+              "host": [
+                "{{WalletDetails}}"
+              ],
+              "query": [
+                {
+                  "key": "password",
+                  "value": "6832",
+                  "disabled": true
+                },
+                {
+                  "key": "phone",
+                  "value": "777"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "26975ac8-680b-46a1-b33e-37aab86d711d"
+    },
+    {
+      "name": "Transver between users",
+      "item": [
+        {
+          "name": "transfer",
+          "id": "176113f4-403a-4c31-ac23-4e9aa5815666",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzODQwMzQ1LCJpYXQiOjE3NjM4NDAwNDUsImp0aSI6IjU2MjlhZjEzMGYzMDRiM2ZhOTFjMzA4OTQzZDQzNzdlIiwidXNlcl9pZCI6IjEifQ.tcQTjJrEsWjryRzSFS1Urx2dlJ3zhd76HimmXyJ_1mk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"senderphone\":777,\r\n    \"reciverphone\":7777,\r\n    \"amount\":5000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{transfer}}",
+              "host": [
+                "{{transfer}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "a156ccbe-c630-4210-ba4d-45395806cf30"
+    }
+  ]
+}
