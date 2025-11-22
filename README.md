@@ -1,11 +1,11 @@
-# 🏦 Wallet System API  
+#   Wallet System API  
 A secure and scalable electronic wallet system built using **Django**, **Django REST Framework**, and **PostgreSQL**, supporting multi–currency wallets, deposits, withdrawals, balance transfers, and complete transaction tracking.  
 
 This project demonstrates real–world financial operations with strong authentication, authorization, and data validation strategies.
 
 ---
 
-## 📘 Table of Contents
+##  Table of Contents
 
 1. [Project Overview](#project-overview)  
 2. [Core Features](#core-features)  
@@ -22,7 +22,7 @@ This project demonstrates real–world financial operations with strong authenti
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 This system is an **electronic multi–currency wallet**, allowing users to:
 
@@ -46,7 +46,7 @@ The project is built with:
 
 #  The Features
 
-### 👤 Users Module
+###  Users Module
 - Register using **username**, **phone**, **password**
 - Phone number must be **unique**
 - Password stored securely
@@ -90,20 +90,20 @@ Transaction (Log every action)
 
 #  Entities 
 
-### 1️⃣ User
+### 1 User
 - username  
 - phone  
 - password  
 - created_at  
 - JWT tokens  
 
-### 2️⃣ Wallet
+### 2 Wallet
 - owner (User)  
 - currency (YEM)  
 - balance 
 - created_at  
 
-### 3️⃣ Transaction
+### 3 Transaction
 - type (DEPOSIT, WITHDRAW, TRANSFER)  
 - amount  
 - from_wallet  
@@ -114,7 +114,7 @@ Transaction (Log every action)
 
 ---
 
-# 🛠 Use Cases
+#  Use Cases
 
 ### ✔ User  
 1. Create account  
@@ -132,9 +132,9 @@ Transaction (Log every action)
 
 ---
 
-# 🚀 API Operations (Details)
+#  API Operations (Details)
 
-## 1️⃣ User Registration  
+## 1 User Registration  
 - Username required  
 - Phone required (unique)  
 - Strong password required  
@@ -146,7 +146,7 @@ Transaction (Log every action)
 
 ---
 
-## 2️⃣ Login (JWT)
+## 2 Login (JWT)
 User logs in with:
 
 - phone  
@@ -161,7 +161,7 @@ These tokens are required for all protected endpoints.
 
 ---
 
-## 3️⃣ Deposit
+## 3 Deposit
 
 ### Requirements:
 - Amount  
@@ -179,7 +179,7 @@ These tokens are required for all protected endpoints.
 
 ---
 
-## 4️⃣ Withdraw
+## 4 Withdraw
 
 Similar to deposit but subtracts amount.
 
@@ -191,7 +191,7 @@ Validation checks include:
 
 ---
 
-## 5️⃣ Transfer  
+## 5 Transfer  
 Transfer money from one wallet to another (your wallet or another user).
 
 ### Server performs:
@@ -205,7 +205,7 @@ Transfer money from one wallet to another (your wallet or another user).
 
 ---
 
-# 🔐 Security Strategies
+# 6 Security Strategies
 
 This project implements multiple levels of security:
 
@@ -245,7 +245,7 @@ This project implements multiple levels of security:
 - Phone is login field  
 - Password hashed by Django  
 
-# 🧰 Installation & Setup
+#  Installation & Setup
 
 ### 1 Clone the repository:
 
@@ -271,7 +271,7 @@ python manage.py migrate
 ### Run server 
 python manage.py runserver
 
-# 📬 Postman Collection
+#  Postman Collection
 
 A full Postman collection is included inside:  
 /postman/wallet-api.postman_collection.json
@@ -307,4 +307,4 @@ project/
 - varifide email 
 - transfer between the accounts in same users wallet
 
-### ------------------ANNND Thank U -----------------------------
+### ------------------------------ANNND Thank U -----------------------------
